@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CandyMandy Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #faf8f4;
+  --surface: #ffffff;
+  --border: #e4ddd0;
+  --fg: #2b2620;
+  --fg-muted: #6b6356;
+  --accent: #b5542e;
+  --accent-soft: #f3e3d8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1814;
+    --surface: #242019;
+    --border: #3a332a;
+    --fg: #ece6da;
+    --fg-muted: #a89d8c;
+    --accent: #e08a5e;
+    --accent-soft: #3a2a20;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 16px 80px;
+}
+
+header.doc-head { margin-bottom: 40px; }
+
+.kicker {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+
+h1 {
+  font-family: "Fraunces", "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(32px, 7vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0 0 14px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 12.5px;
+  color: var(--fg-muted);
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.meta span b { color: var(--fg); font-weight: 600; }
+
+.lede {
+  font-size: 18px;
+  color: var(--fg-muted);
+  margin: 20px 0 0;
+  max-width: 60ch;
+}
+
+main section {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+h2 {
+  font-family: "Fraunces", "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.005em;
+  margin: 0 0 14px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+h2 .num {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+p { margin: 0 0 14px; max-width: 64ch; }
+p:last-child { margin-bottom: 0; }
+
+ul { margin: 0 0 14px; padding-left: 22px; max-width: 62ch; }
+li { margin-bottom: 8px; }
+li:last-child { margin-bottom: 0; }
+
+strong { font-weight: 600; }
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-soft);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+a:hover { text-decoration-color: currentColor; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 18px 0;
+}
+.card p { margin-bottom: 8px; }
+.card p:last-child { margin-bottom: 0; }
+
+.data-table-wrap { overflow-x: auto; }
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 14.5px;
+}
+.data-table th, .data-table td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.data-table th {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  font-weight: 500;
+}
+.data-table tr:last-child td { border-bottom: none; }
+
+.pill {
+  display: inline-block;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.contact-box {
+  background: var(--accent-soft);
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin-top: 14px;
+}
+.contact-box p { margin-bottom: 6px; }
+.contact-box .email {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 15px;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--fg-muted);
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+
+@media (max-width: 480px) {
+  .wrap { padding: 32px 16px 56px; }
+  h1 { font-size: 30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="doc-head">
+    <p class="kicker">Privacy Policy</p>
+    <h1>CandyMandy</h1>
+    <p class="lede">A match-3 puzzle game by Rohit Nishad. This page explains what information the app touches, where it goes, and how to reach us about it.</p>
+    <div class="meta">
+      <span>Effective <b>October 19, 2026</b></span>
+      <span>App ID <b>com.example.candymandy</b></span>
+      <span>Contact <b>rohitnishad737@gmail.com</b></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="overview">
+      <h2><span class="num">01</span> Overview</h2>
+      <p>CandyMandy is a single-player puzzle game. It does not require you to create an account, sign in, or provide your name, email address, or any other personal detail to play.</p>
+      <p>The app shows advertising through Google AdMob to support free play. That is the only outside party CandyMandy shares any device information with, and the sections below describe exactly what that involves.</p>
+    </section>
+
+    <section id="collected">
+      <h2><span class="num">02</span> Information we collect directly</h2>
+      <p>CandyMandy itself does not collect, transmit, or store any personal information on a server. The only data the app keeps is your in-game progress &mdash; level reached, score, and settings &mdash; saved locally on your device using Android's standard preferences storage.</p>
+      <div class="card">
+        <p><strong>This local save data:</strong></p>
+        <ul>
+          <li>Never leaves your device or gets sent to us or anyone else</li>
+          <li>Is deleted automatically if you uninstall the app or clear its storage</li>
+          <li>Is not linked to your name, email, or any account</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ads">
+      <h2><span class="num">03</span> Advertising <span class="pill">Google AdMob</span></h2>
+      <p>CandyMandy displays banner and interstitial ads using the Google Mobile Ads SDK (AdMob). To select and measure ads, Google and its advertising partners may automatically collect technical information from your device, independently of anything CandyMandy itself collects.</p>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Data type</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Advertising ID</td><td>Ad selection, frequency capping, measurement</td></tr>
+            <tr><td>IP address / approximate location</td><td>Ad delivery, fraud prevention</td></tr>
+            <tr><td>Device &amp; app info (model, OS, app version)</td><td>Ad compatibility, performance reporting</td></tr>
+            <tr><td>Ad interaction (views, clicks)</td><td>Measurement and billing</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>This processing is governed by Google's own policies, not CandyMandy's. You can review how Google handles this data and the controls available to you at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+      <p>To limit ad personalization, use your device's ad settings: on Android, go to <strong>Settings &rsaquo; Privacy &rsaquo; Ads</strong> (or <strong>Google Settings &rsaquo; Ads</strong> on older versions) and opt out of interest-based ads, or reset your advertising ID.</p>
+    </section>
+
+    <section id="permissions">
+      <h2><span class="num">04</span> App permissions</h2>
+      <p>CandyMandy requests only the permissions it needs to function:</p>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Permission</th><th>Why it's needed</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Internet access</td><td>Loading ads from Google AdMob</td></tr>
+            <tr><td>Network state</td><td>Checking connectivity before requesting an ad</td></tr>
+            <tr><td>Vibration</td><td>Haptic feedback when candies match or swap</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>CandyMandy does not request access to your contacts, camera, microphone, precise location, storage, or any other sensitive permission.</p>
+    </section>
+
+    <section id="children">
+      <h2><span class="num">05</span> Children's privacy</h2>
+      <p>CandyMandy is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, contact us using the details below and we will address it.</p>
+    </section>
+
+    <section id="security">
+      <h2><span class="num">06</span> Data security</h2>
+      <p>Because CandyMandy keeps game data on your device only, there is no server-side database of your personal information for us to protect. Data handled by the AdMob SDK is secured according to Google's own infrastructure and policies.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">07</span> Changes to this policy</h2>
+      <p>If this policy changes &mdash; for example, if a future update adds a new feature that collects data &mdash; we'll revise this page and update the effective date above. Continued use of the app after a change means you accept the revised policy.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">08</span> Contact us</h2>
+      <p>Questions about this policy or how CandyMandy handles data can be sent directly to the developer:</p>
+      <div class="contact-box">
+        <p>Rohit Nishad</p>
+        <p class="email">rohitnishad737@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    CandyMandy &middot; com.example.candymandy &middot; Last updated 2026-10-19
+  </footer>
+</div>
+</body>
+</html>
